@@ -1,55 +1,69 @@
-import React from "react";
-
 export const NavBar = () => {
   return (
-    <header
-      className="w-100 bg-info-subtle"
-      style={{ height: "160px" }}
+    <nav
+      style={{
+        backgroundColor: "#c8d8e8",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        padding: "10px 0 20px",
+        width: "100%",
+      }}
     >
-      <nav
-        className="container h-100 d-grid"
+      <img
+        src="/logo.png"
+        alt="GlitchVerse"
         style={{
-          gridTemplateColumns: "1fr auto 1fr", // izquierda | centro | derecha
-          alignItems: "center"
+          width: "180px",
+          height: "auto",
+          marginBottom: "20px",
+        }}
+      />
+
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
+          alignItems: "center",
         }}
       >
-        {/* IZQUIERDA */}
-        <div className="d-flex gap-4 align-items-center">
-          <a
-            href="#"
-            className="text-dark fw-medium text-decoration-none"
-          >
-            Conoce el cómic
-          </a>
+        <a
+          href="/"
+          style={{
+            textDecoration: "none",
+            color: "black",
+            fontWeight: "bold",
+            fontSize: "20px",
+          }}
+        >
+          Inicio
+        </a>
 
-          <a
-            href="#"
-            className="text-dark fw-medium text-decoration-none"
-          >
-            Conoce GlitchVerse
-          </a>
-        </div>
+        <a
+          href="/comic"
+          style={{
+            textDecoration: "none",
+            color: "black",
+            fontWeight: "bold",
+            fontSize: "20px",
+          }}
+        >
+          Cómic
+        </a>
 
-        {/* CENTRO */}
-        <div className="d-flex justify-content-center">
-  <img
-    src="./logo.png"
-    alt="GlitchVerse"
-    className="img-fluid"
-    style={{
-      width: "250px",     // AUMENTADO
-      marginRight: "-130px",
-      marginTop: "9px"
-    }}
-  />
-</div>
-
-        {/* DERECHA – ICONOS */}
-        <div className="d-flex justify-content-end align-items-center gap-3">
-          <i className="bi bi-search" style={{ fontSize: "1.3rem", cursor: "pointer" }}></i>
-          <i className="bi bi-cart3" style={{ fontSize: "1.3rem", cursor: "pointer" }}></i>
-        </div>
-      </nav>
-    </header>
+        <a
+          href="/tienda"
+          style={{
+            textDecoration: "none",
+            color: "black",
+            fontWeight: "bold",
+            fontSize: "20px",
+          }}
+        >
+          Tienda
+        </a>
+      </div>
+    </nav>
   );
-};
+}
