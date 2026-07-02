@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { PaginaComic } from './components/PaginaComic.jsx'
-import { Comic } from './components/Comic.jsx'
-import { Tienda } from './components/Tienda.jsx'  
-import { HistoriaComic } from './components/HistoriaComic.jsx'
-import { Capitulos } from './components/Capitulos.jsx' // 🚀 1. IMPORTAMOS EL NUEVO COMPONENTE DE REPRODUCCIÓN
+import PaginaComic from './components/PaginaComic.jsx'
+import Comic from './components/Comic.jsx'
+import Tienda from './components/Tienda.jsx'  
+import HistoriaComic from './components/HistoriaComic.jsx'
+import Capitulos from './components/Capitulos.jsx' // 🚀 1. IMPORTAMOS EL NUEVO COMPONENTE DE REPRODUCCIÓN
 
 export const App = () => {
   return (
