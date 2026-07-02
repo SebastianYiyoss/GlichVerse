@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { PaginaComic } from './components/PaginaComic.jsx'
-import Comic from './components/Comic.jsx'
+import { Comic } from './components/Comic.jsx'
 import { Tienda } from './components/Tienda.jsx'  
 import { HistoriaComic } from './components/HistoriaComic.jsx'
 import { Capitulos } from './components/Capitulos.jsx' // 🚀 1. IMPORTAMOS EL NUEVO COMPONENTE DE REPRODUCCIÓN
@@ -11,7 +11,7 @@ export const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PaginaComic/>} />
-        <Route path="/Comic.jsx" element={<Comic/>} />
+        <Route path="./components/Comic.jsx" element={<Comic/>} />
         <Route path="./components/Tienda.jsx" element={<Tienda/>} />  
 
         {/* 🚀 2. ESTA ES LA RUTA DE LA HISTORIA */}
