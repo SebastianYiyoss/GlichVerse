@@ -11,8 +11,8 @@ export const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PaginaComic/>} />
-        <Route path="/Comic" element={<Comic/>} />
-        <Route path="/Tienda" element={<Tienda/>} />  
+        <Route path="./components/Comic.jsx" element={<Comic/>} />
+        <Route path="./components/Tienda.jsx" element={<Tienda/>} />  
 
         {/* 🚀 2. ESTA ES LA RUTA DE LA HISTORIA */}
         <Route path="/HistoriaComic" element={<HistoriaComic />} />
