@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import teaserVideo from '../assets/teaserrrr.mp4';
+
 
 export const ComicInicio = () => {
   return (
@@ -276,24 +276,26 @@ export const ComicInicio = () => {
         </div>
 
         <section className="w-100 mt-5 mb-4 text-center">
-          <h2 className="fw-bold mb-4" style={{ color: "#016C6A", fontSize: "2.5rem" }}>
-            Teaser
-          </h2>
-          {/* <video
-            src={teaserVideo}
-            controls
-            muted
-            playsInline
-            style={{
-              width: "100%",
-              maxHeight: "500px",
-              borderRadius: "16px",
-              boxShadow: "0 4px 15px rgba(0,0,0,0.15)",
-              backgroundColor: "#000",
-              display: "block",
-            }}
-          /> */}
-        </section>
+  <h2
+    className="fw-bold mb-4"
+    style={{ color: "#016C6A", fontSize: "2.5rem" }}
+  >
+    Video
+  </h2>
+
+  <div className="video-container">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/JD3Ud0hXxRA"
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+</section>
+
 
       </div>
     </>
